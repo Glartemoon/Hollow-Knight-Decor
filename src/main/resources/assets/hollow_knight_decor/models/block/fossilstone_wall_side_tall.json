@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "hollow_knight_decor:block/fossilstone",
+    "particle": "hollow_knight_decor:block/fossilstone"
+  },
+  "render_type": "solid"
+}

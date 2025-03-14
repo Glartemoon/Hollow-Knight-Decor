@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "hollow_knight_decor:block/fossilstone_bricks",
+    "particle": "hollow_knight_decor:block/fossilstone_bricks"
+  },
+  "render_type": "solid"
+}

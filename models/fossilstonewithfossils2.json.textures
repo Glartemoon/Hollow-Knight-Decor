@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fossilstone",
+        "1": "fossilstone_fossils"
+      },
+      "name": "default"
+    }
+  }
+}

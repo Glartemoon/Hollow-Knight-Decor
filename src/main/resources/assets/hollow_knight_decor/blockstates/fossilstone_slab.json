@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "hollow_knight_decor:block/fossilstone_slab"
+    },
+    "type=top": {
+      "model": "hollow_knight_decor:block/fossilstone_slab_top"
+    },
+    "type=double": {
+      "model": "hollow_knight_decor:block/fossilstone_slab_full"
+    }
+  }
+}

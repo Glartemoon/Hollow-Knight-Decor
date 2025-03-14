@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "hollow_knight_decor:block/fossilstone_bricks_top",
+    "up": "hollow_knight_decor:block/fossilstone_bricks_top",
+    "north": "hollow_knight_decor:block/fossilstone_bricks_toptop",
+    "east": "hollow_knight_decor:block/fossilstone_bricks_toptop",
+    "south": "hollow_knight_decor:block/fossilstone_bricks_toptop",
+    "west": "hollow_knight_decor:block/fossilstone_bricks_toptop",
+    "particle": "hollow_knight_decor:block/fossilstone_bricks_top"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "hollow_knight_decor:block/fossilstone",
+    "bottom": "hollow_knight_decor:block/fossilstone",
+    "top": "hollow_knight_decor:block/fossilstone",
+    "side": "hollow_knight_decor:block/fossilstone"
+  },
+  "render_type": "solid"
+}

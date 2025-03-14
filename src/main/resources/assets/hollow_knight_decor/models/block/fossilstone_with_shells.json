@@ -1,0 +1,10 @@
+{
+  "parent": "hollow_knight_decor:custom/fossilstonewithfossils1",
+  "textures": {
+    "all": "hollow_knight_decor:block/fossilstone",
+    "particle": "hollow_knight_decor:block/fossilstone",
+    "0": "hollow_knight_decor:block/fossilstone",
+    "1": "hollow_knight_decor:block/fossilstone_fossils"
+  },
+  "render_type": "solid"
+}

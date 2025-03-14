@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "hollow_knight_decor:block/fossilstone_bricks"
+    },
+    "blockstate=1": {
+      "model": "hollow_knight_decor:block/fossilstone_bricks_top_blockstate_0"
+    }
+  }
+}

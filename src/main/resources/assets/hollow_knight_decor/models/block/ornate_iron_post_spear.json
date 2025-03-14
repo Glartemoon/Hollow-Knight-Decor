@@ -1,0 +1,9 @@
+{
+  "parent": "hollow_knight_decor:custom/bugpostspear",
+  "textures": {
+    "all": "hollow_knight_decor:block/buglanternpost",
+    "particle": "hollow_knight_decor:block/buglanternpost",
+    "0": "hollow_knight_decor:block/buglanternpost"
+  },
+  "render_type": "cutout"
+}

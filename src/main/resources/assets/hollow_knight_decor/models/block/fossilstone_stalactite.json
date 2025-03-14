@@ -1,0 +1,9 @@
+{
+  "parent": "hollow_knight_decor:custom/fossilstonestalactites",
+  "textures": {
+    "all": "hollow_knight_decor:block/fossilstone_stalagmite",
+    "particle": "hollow_knight_decor:block/fossilstone_stalagmite",
+    "0": "hollow_knight_decor:block/buglanternpost"
+  },
+  "render_type": "cutout"
+}

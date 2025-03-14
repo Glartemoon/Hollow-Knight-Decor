@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "hollow_knight_decor:ornate_window",
+    "hollow_knight_decor:fossilstone_stalactite",
+    "hollow_knight_decor:old_ornate_lumafly_lantern",
+    "hollow_knight_decor:ornate_iron_post_spear",
+    "hollow_knight_decor:ornate_lumafly_lantern",
+    "hollow_knight_decor:ornate_iron_post",
+    "hollow_knight_decor:ornate_iron_fence",
+    "hollow_knight_decor:fossilstone_bricks_wall",
+    "hollow_knight_decor:fossilstone_bricks_stairs",
+    "hollow_knight_decor:fossilstone_bricks_slab",
+    "hollow_knight_decor:polished_fossilstone",
+    "hollow_knight_decor:small_fossilstone_pillar",
+    "hollow_knight_decor:fossilstone_pillar",
+    "hollow_knight_decor:fossilstone_bricks",
+    "hollow_knight_decor:fossilstone_wall",
+    "hollow_knight_decor:fossilstone_stairs",
+    "hollow_knight_decor:fossilstone_slab",
+    "hollow_knight_decor:fossilstone_with_shells",
+    "hollow_knight_decor:fossilstone"
+  ]
+}

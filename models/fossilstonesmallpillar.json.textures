@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "fossilstone_small_pillar"
+      },
+      "name": "default"
+    }
+  }
+}

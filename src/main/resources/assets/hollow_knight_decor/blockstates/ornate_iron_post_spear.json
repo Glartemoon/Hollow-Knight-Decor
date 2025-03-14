@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hollow_knight_decor:block/ornate_iron_post_spear"
+    },
+    "facing=east": {
+      "model": "hollow_knight_decor:block/ornate_iron_post_spear",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hollow_knight_decor:block/ornate_iron_post_spear",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hollow_knight_decor:block/ornate_iron_post_spear",
+      "y": 270
+    }
+  }
+}

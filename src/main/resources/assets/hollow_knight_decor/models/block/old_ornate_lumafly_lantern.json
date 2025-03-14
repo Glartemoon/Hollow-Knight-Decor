@@ -1,0 +1,11 @@
+{
+  "parent": "hollow_knight_decor:custom/bugpostlantern2old",
+  "textures": {
+    "all": "hollow_knight_decor:block/buglanternpostlantern2old",
+    "particle": "hollow_knight_decor:block/buglanternpostlantern2old",
+    "0": "hollow_knight_decor:block/buglanternpostlantern2old",
+    "1": "hollow_knight_decor:block/buglanternpost",
+    "2": "hollow_knight_decor:block/lumaflyanim"
+  },
+  "render_type": "cutout"
+}

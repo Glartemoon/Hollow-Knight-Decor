@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hollow_knight_decor:block/old_ornate_lumafly_lantern"
+    },
+    "facing=east": {
+      "model": "hollow_knight_decor:block/old_ornate_lumafly_lantern",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hollow_knight_decor:block/old_ornate_lumafly_lantern",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hollow_knight_decor:block/old_ornate_lumafly_lantern",
+      "y": 270
+    }
+  }
+}

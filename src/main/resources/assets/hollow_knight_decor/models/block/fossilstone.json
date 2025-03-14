@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "hollow_knight_decor:block/fossilstone",
+    "particle": "hollow_knight_decor:block/fossilstone"
+  },
+  "render_type": "solid"
+}

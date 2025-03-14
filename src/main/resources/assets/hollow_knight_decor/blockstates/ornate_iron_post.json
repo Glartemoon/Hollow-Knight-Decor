@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "hollow_knight_decor:block/ornate_iron_post"
+    },
+    "blockstate=1": {
+      "model": "hollow_knight_decor:block/ornate_iron_post_b_blockstate_0"
+    }
+  }
+}

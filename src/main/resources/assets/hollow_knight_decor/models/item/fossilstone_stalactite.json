@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "hollow_knight_decor:item/fossilstone_stalagmite_item"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "hollow_knight_decor:block/fossilstone_bricks_top",
+    "bottom": "hollow_knight_decor:block/fossilstone_bricks_top",
+    "top": "hollow_knight_decor:block/fossilstone_bricks_top",
+    "side": "hollow_knight_decor:block/fossilstone_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "hollow_knight_decor:custom/bugfence",
+  "textures": {
+    "all": "hollow_knight_decor:block/ornatebugfence",
+    "particle": "hollow_knight_decor:block/ornatebugfence",
+    "0": "hollow_knight_decor:block/ornatebugfence"
+  },
+  "render_type": "cutout"
+}

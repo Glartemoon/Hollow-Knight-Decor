@@ -1,0 +1,591 @@
+{
+  "mod_elements": [
+    {
+      "name": "FossilstoneBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/procedures/FossilstoneBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fossilstone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneWithShells",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_with_shells",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneWithShellsBlock.java",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_with_shells.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_with_shells.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_with_shells.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_with_shells.json"
+        ]
+      }
+    },
+    {
+      "name": "Fossils",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossils",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossils_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_slab.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_slab_top.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_slab_full.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_slab.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_slab.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneSlabBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_slab.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_stairs_inner.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_stairs.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_stairs.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneStairsBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_stairs.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_stairs_outer.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_stairs.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_wall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneWallBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_wall_side_tall.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_wall.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_wall.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_wall.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_wall_inventory.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_wall.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_wall_post.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_bricks.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_bricks.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_bricks.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneBricksBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricksBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/procedures/FossilstoneBricksBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricksTop",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks_top",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_top_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstonePillar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_pillar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_pillar.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstonePillarBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_pillar.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_pillar.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_pillar.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallFossilstonePillar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_fossilstone_pillar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/blockstates/small_fossilstone_pillar.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/small_fossilstone_pillar.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/SmallFossilstonePillarBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/item/small_fossilstone_pillar.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/small_fossilstone_pillar.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedFossilstone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_fossilstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/item/polished_fossilstone.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/polished_fossilstone.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/PolishedFossilstoneBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/block/polished_fossilstone.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/polished_fossilstone.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricksSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_slab_top.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_bricks_slab.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_bricks_slab.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_bricks_slab.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneBricksSlabBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_slab.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_slab_full.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricksStairs",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_stairs_outer.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_bricks_stairs.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneBricksStairsBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_bricks_stairs.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_stairs.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_bricks_stairs.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_stairs_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricksWall",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks_wall",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_bricks_wall.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_wall_post.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_bricks_wall.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_wall_inventory.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_wall.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_bricks_wall_side_tall.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneBricksWallBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_bricks_wall.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronFence",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_iron_fence.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_iron_fence.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/ornate_iron_fence.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/OrnateIronFenceBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_iron_fence.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronPost",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_post",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_iron_post.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_iron_post.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/ornate_iron_post.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/OrnateIronPostBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_iron_post.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronPostB",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_post_b",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_iron_post_b_blockstate_0.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronPostBottom",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_post_bottom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/procedures/OrnateIronPostBottomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrnateLumaflyLantern",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_lumafly_lantern",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/item/ornate_lumafly_lantern.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_lumafly_lantern.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_lumafly_lantern.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_lumafly_lantern.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/OrnateLumaflyLanternBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronPostSpear",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_post_spear",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/block/OrnateIronPostSpearBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_iron_post_spear.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_iron_post_spear.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/ornate_iron_post_spear.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_iron_post_spear.json"
+        ]
+      }
+    },
+    {
+      "name": "OldOrnateLumaflyLantern",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_ornate_lumafly_lantern",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/old_ornate_lumafly_lantern.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/old_ornate_lumafly_lantern.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/old_ornate_lumafly_lantern.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/old_ornate_lumafly_lantern.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/OldOrnateLumaflyLanternBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneWithFossilsStart",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_with_fossils_start",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/procedures/FossilstoneWithFossilsStartProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneStalactite",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_stalactite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_stalactite.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneStalactiteBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_stalactite.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_stalactite.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_stalactite.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateWindow",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_window",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/item/ornate_window.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_window.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_window.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/OrnateWindowBlock.java",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_window.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateWindows",
+      "type": "blockstates",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_windows",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_windows_blockstate_0.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:OrnateWindow",
+      "~CUSTOM:FossilstoneStalactite",
+      "~CUSTOM:OldOrnateLumaflyLantern",
+      "~CUSTOM:OrnateIronPostSpear",
+      "~CUSTOM:OrnateLumaflyLantern",
+      "~CUSTOM:OrnateIronPost",
+      "~CUSTOM:OrnateIronFence",
+      "~CUSTOM:FossilstoneBricksWall",
+      "~CUSTOM:FossilstoneBricksStairs",
+      "~CUSTOM:FossilstoneBricksSlab",
+      "~CUSTOM:PolishedFossilstone",
+      "~CUSTOM:SmallFossilstonePillar",
+      "~CUSTOM:FossilstonePillar",
+      "~CUSTOM:FossilstoneBricks",
+      "~CUSTOM:FossilstoneWall",
+      "~CUSTOM:FossilstoneStairs",
+      "~CUSTOM:FossilstoneSlab",
+      "~CUSTOM:FossilstoneWithShells",
+      "~CUSTOM:Fossilstone"
+    ],
+    "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:FossilstoneBricksSlab",
+      "~CUSTOM:FossilstoneSlab"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:OldOrnateLumaflyLantern",
+      "~CUSTOM:OrnateIronPostSpear",
+      "~CUSTOM:OrnateLumaflyLantern",
+      "~CUSTOM:OrnateIronPost",
+      "~CUSTOM:OrnateIronFence",
+      "~CUSTOM:FossilstoneBricksWall",
+      "~CUSTOM:FossilstoneBricksStairs",
+      "~CUSTOM:FossilstoneBricksSlab",
+      "~CUSTOM:PolishedFossilstone",
+      "~CUSTOM:SmallFossilstonePillar",
+      "~CUSTOM:FossilstonePillar",
+      "~CUSTOM:FossilstoneBricks",
+      "~CUSTOM:FossilstoneWall",
+      "~CUSTOM:FossilstoneStairs",
+      "~CUSTOM:FossilstoneSlab",
+      "~CUSTOM:Fossilstone"
+    ],
+    "BLOCKS:minecraft:walls": [
+      "~CUSTOM:FossilstoneBricksWall",
+      "~CUSTOM:FossilstoneWall"
+    ],
+    "BLOCKS:minecraft:stairs": [
+      "~CUSTOM:FossilstoneBricksStairs",
+      "~CUSTOM:FossilstoneStairs"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "block.hollow_knight_decor.ornate_iron_fence": "Ornate Iron Fence",
+      "block.hollow_knight_decor.fossilstone_bricks_stairs": "Fossilstone Bricks Stairs",
+      "block.hollow_knight_decor.old_ornate_lumafly_lantern": "Old Ornate Lumafly Lantern",
+      "block.hollow_knight_decor.fossilstone_bricks": "Fossilstone Bricks",
+      "block.hollow_knight_decor.fossilstone_with_shells": "Fossilstone With Shells",
+      "block.hollow_knight_decor.fossilstone_stairs": "Fossilstone Stairs",
+      "block.hollow_knight_decor.small_fossilstone_pillar": "Small Fossilstone Pillar",
+      "block.hollow_knight_decor.fossilstone_bricks_slab": "Fossilstone Bricks Slab",
+      "block.hollow_knight_decor.ornate_iron_post_spear": "Ornate Iron Post Spear",
+      "block.hollow_knight_decor.ornate_window": "Ornate Window",
+      "block.hollow_knight_decor.fossilstone_slab": "Fossilstone Slab",
+      "block.hollow_knight_decor.ornate_iron_post": "Ornate Iron Post",
+      "block.hollow_knight_decor.fossilstone_stalactite": "Fossilstone Stalactite",
+      "block.hollow_knight_decor.fossilstone": "Fossilstone",
+      "block.hollow_knight_decor.fossilstone_bricks_wall": "Fossilstone Bricks Wall",
+      "block.hollow_knight_decor.fossilstone_pillar": "Fossilstone Pillar",
+      "block.hollow_knight_decor.polished_fossilstone": "Polished Fossilstone",
+      "block.hollow_knight_decor.fossilstone_wall": "Fossilstone Wall",
+      "block.hollow_knight_decor.ornate_lumafly_lantern": "Ornate Lumafly Lantern"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "hollow_knight_decor",
+    "modName": "Hollow Knight Decor",
+    "version": "0.1.3",
+    "author": "Astro, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "serverSideOnly": false,
+    "modPicture": "hallownest_seal",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.hollowknightdecor"
+  },
+  "mcreatorVersion": 202400452410
+}

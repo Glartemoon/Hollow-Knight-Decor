@@ -1,0 +1,9 @@
+{
+  "parent": "hollow_knight_decor:custom/ornatewindowtop",
+  "textures": {
+    "all": "hollow_knight_decor:block/ornatewindow1top",
+    "particle": "hollow_knight_decor:block/ornatewindow1center",
+    "0": "hollow_knight_decor:block/ornatewindow1top"
+  },
+  "render_type": "translucent"
+}

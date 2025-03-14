@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "buglanternpostlantern2old",
+        "1": "buglanternpost",
+        "2": "lumaflyanim"
+      },
+      "name": "default"
+    }
+  }
+}
