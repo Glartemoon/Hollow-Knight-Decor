@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "hollow_knight_decor:fossilstone"
+    }
+  },
+  "result": {
+    "item": "hollow_knight_decor:fossilstone_pillar",
+    "count": 2
+  }
+}

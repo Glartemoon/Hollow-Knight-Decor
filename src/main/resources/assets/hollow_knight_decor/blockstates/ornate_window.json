@@ -1,33 +1,33 @@
 {
   "variants": {
     "facing=north,blockstate=0": {
-      "model": "hollow_knight_decor:block/ornate_window"
+      "model": "hollow_knight_decor:custom/ornate_window_particle"
     },
     "facing=east,blockstate=0": {
-      "model": "hollow_knight_decor:block/ornate_window",
+      "model": "hollow_knight_decor:custom/ornate_window_particle",
       "y": 90
     },
     "facing=south,blockstate=0": {
-      "model": "hollow_knight_decor:block/ornate_window",
+      "model": "hollow_knight_decor:custom/ornate_window_particle",
       "y": 180
     },
     "facing=west,blockstate=0": {
-      "model": "hollow_knight_decor:block/ornate_window",
+      "model": "hollow_knight_decor:custom/ornate_window_particle",
       "y": 270
     },
     "facing=north,blockstate=1": {
-      "model": "hollow_knight_decor:block/ornate_windows_blockstate_0"
+      "model": "hollow_knight_decor:block/ornate_window_blockstate_0"
     },
     "facing=east,blockstate=1": {
-      "model": "hollow_knight_decor:block/ornate_windows_blockstate_0",
+      "model": "hollow_knight_decor:block/ornate_window_blockstate_0",
       "y": 90
     },
     "facing=south,blockstate=1": {
-      "model": "hollow_knight_decor:block/ornate_windows_blockstate_0",
+      "model": "hollow_knight_decor:block/ornate_window_blockstate_0",
       "y": 180
     },
     "facing=west,blockstate=1": {
-      "model": "hollow_knight_decor:block/ornate_windows_blockstate_0",
+      "model": "hollow_knight_decor:block/ornate_window_blockstate_0",
       "y": 270
     }
   }

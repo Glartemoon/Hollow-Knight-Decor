@@ -1,0 +1,7 @@
+
+{
+  "parent": "hollow_knight_decor:displaysettings/ornatewindow",
+  "textures": {
+    "particle": "hollow_knight_decor:block/ornatewindow1center"
+  }
+}

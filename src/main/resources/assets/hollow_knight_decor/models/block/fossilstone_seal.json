@@ -1,0 +1,9 @@
+{
+  "parent": "hollow_knight_decor:custom/fossilstoneseal",
+  "textures": {
+    "all": "hollow_knight_decor:block/fossilstone_seal",
+    "particle": "hollow_knight_decor:block/fossilstone_seal",
+    "0": "hollow_knight_decor:block/fossilstone_seal"
+  },
+  "render_type": "cutout"
+}

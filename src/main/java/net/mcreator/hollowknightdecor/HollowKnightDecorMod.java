@@ -19,7 +19,9 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.hollowknightdecor.init.HollowKnightDecorModTabs;
 import net.mcreator.hollowknightdecor.init.HollowKnightDecorModItems;
+import net.mcreator.hollowknightdecor.init.HollowKnightDecorModEntities;
 import net.mcreator.hollowknightdecor.init.HollowKnightDecorModBlocks;
+import net.mcreator.hollowknightdecor.init.HollowKnightDecorModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -42,8 +44,9 @@ public class HollowKnightDecorMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		HollowKnightDecorModBlocks.REGISTRY.register(bus);
-
+		HollowKnightDecorModBlockEntities.REGISTRY.register(bus);
 		HollowKnightDecorModItems.REGISTRY.register(bus);
+		HollowKnightDecorModEntities.REGISTRY.register(bus);
 
 		HollowKnightDecorModTabs.REGISTRY.register(bus);
 

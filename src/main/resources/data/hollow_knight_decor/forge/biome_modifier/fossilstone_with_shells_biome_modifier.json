@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "hollow_knight_decor:fossilstone_with_shells",
+  "step": "underground_ores"
+}

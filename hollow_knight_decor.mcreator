@@ -39,7 +39,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone.json",
+          "src/main/resources/data/hollow_knight_decor/forge/biome_modifier/fossilstone_biome_modifier.json",
+          "src/main/resources/data/hollow_knight_decor/worldgen/configured_feature/fossilstone.json",
           "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone.json",
+          "src/main/resources/data/hollow_knight_decor/worldgen/placed_feature/fossilstone.json",
           "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone.json",
           "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone.json",
           "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneBlock.java"
@@ -54,9 +57,12 @@
       "registry_name": "fossilstone_with_shells",
       "metadata": {
         "files": [
+          "src/main/resources/data/hollow_knight_decor/forge/biome_modifier/fossilstone_with_shells_biome_modifier.json",
           "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneWithShellsBlock.java",
           "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_with_shells.json",
           "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_with_shells.json",
+          "src/main/resources/data/hollow_knight_decor/worldgen/placed_feature/fossilstone_with_shells.json",
+          "src/main/resources/data/hollow_knight_decor/worldgen/configured_feature/fossilstone_with_shells.json",
           "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_with_shells.json",
           "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_with_shells.json"
         ]
@@ -459,30 +465,437 @@
       }
     },
     {
+      "name": "OrnateWindowProc",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_window_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/procedures/OrnateWindowProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "OrnateWindow",
-      "type": "block",
+      "type": "animatedblock",
       "compiles": true,
       "locked_code": false,
       "registry_name": "ornate_window",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/block/renderer/OrnateWindowTileRenderer.java",
+          "src/main/resources/assets/hollow_knight_decor/models/custom/ornate_window_particle.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/renderer/OrnateWindowDisplayItemRenderer.java",
           "src/main/resources/assets/hollow_knight_decor/models/item/ornate_window.json",
           "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_window.json",
-          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_window.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/entity/OrnateWindowTileEntity.java",
+          "src/main/java/net/mcreator/hollowknightdecor/block/model/OrnateWindowDisplayModel.java",
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_window_blockstate_0.json",
           "src/main/java/net/mcreator/hollowknightdecor/block/OrnateWindowBlock.java",
-          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_window.json"
+          "src/main/java/net/mcreator/hollowknightdecor/block/display/OrnateWindowDisplayItem.java",
+          "src/main/java/net/mcreator/hollowknightdecor/block/model/OrnateWindowBlockModel.java"
         ]
       }
     },
     {
-      "name": "OrnateWindows",
-      "type": "blockstates",
+      "name": "OrnateIronSeal",
+      "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ornate_windows",
+      "registry_name": "ornate_iron_seal",
       "metadata": {
         "files": [
-          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_windows_blockstate_0.json"
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_iron_seal.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_iron_seal.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/OrnateIronSealBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/item/ornate_iron_seal.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_iron_seal.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneSlabRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_slab_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/fossilstone_slab_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneStairsRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_stairs_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/fossilstone_stairs_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneWallRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_wall_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/fossilstone_wall_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricksRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/fossilstone_bricks_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricksSlabRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks_slab_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/fossilstone_bricks_slab_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneBricksStairsRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_bricks_stairs_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/fossilstone_bricks_stairs_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstonePillarRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_pillar_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/fossilstone_pillar_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallFossilstonePillarRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_fossilstone_pillar_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/small_fossilstone_pillar_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "PolishedFossilstoneRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "polished_fossilstone_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/polished_fossilstone_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronFenceRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_fence_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/ornate_iron_fence_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronPostRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_post_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/ornate_iron_post_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateLumaflyLanternRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_lumafly_lantern_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/ornate_lumafly_lantern_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronPostSpearRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_post_spear_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/ornate_iron_post_spear_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "OldOrnateLumaflyLanternRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_ornate_lumafly_lantern_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/old_ornate_lumafly_lantern_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateWindowRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_window_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/ornate_window_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateIronSealRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_iron_seal_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/ornate_iron_seal_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneSeal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_seal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/block/FossilstoneSealBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/fossilstone_seal.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/fossilstone_seal.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/fossilstone_seal.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/fossilstone_seal.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateDoubleLumaflyLantern",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_double_lumafly_lantern",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/block/OrnateDoubleLumaflyLanternBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/item/ornate_double_lumafly_lantern.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_double_lumafly_lantern.json",
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_double_lumafly_lantern.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_double_lumafly_lantern.json"
+        ]
+      }
+    },
+    {
+      "name": "WitheredRoyalWallpaper",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withered_royal_wallpaper",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/item/withered_royal_wallpaper.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/WitheredRoyalWallpaperBlock.java",
+          "src/main/resources/assets/hollow_knight_decor/models/block/withered_royal_wallpaper.json",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/withered_royal_wallpaper.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/withered_royal_wallpaper.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateDoubleLumaflyLanternRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_double_lumafly_lantern_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/ornate_double_lumafly_lantern_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "WitheredRoyalWallpaperRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withered_royal_wallpaper_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/withered_royal_wallpaper_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "FossilstoneSealRec",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossilstone_seal_rec",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/hollow_knight_decor/recipes/fossilstone_seal_rec.json"
+        ]
+      }
+    },
+    {
+      "name": "OrnateBench",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_bench",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/block/ornate_bench.json",
+          "src/main/resources/assets/hollow_knight_decor/models/item/ornate_bench.json",
+          "src/main/resources/assets/hollow_knight_decor/blockstates/ornate_bench.json",
+          "src/main/java/net/mcreator/hollowknightdecor/block/OrnateBenchBlock.java",
+          "src/main/resources/data/hollow_knight_decor/loot_tables/blocks/ornate_bench.json"
+        ]
+      }
+    },
+    {
+      "name": "BenchMonster",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bench_monster",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/hollow_knight_decor/models/item/bench_monster_spawn_egg.json",
+          "src/main/resources/data/hollow_knight_decor/forge/biome_modifier/bench_monster_biome_modifier.json",
+          "src/main/java/net/mcreator/hollowknightdecor/entity/BenchMonsterEntity.java",
+          "src/main/java/net/mcreator/hollowknightdecor/client/renderer/BenchMonsterRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "OrnateBenchBlockAdded",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_bench_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/procedures/OrnateBenchBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OrnateBenchOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ornate_bench_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/hollowknightdecor/procedures/OrnateBenchOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -491,6 +904,11 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:OrnateBench",
+      "~CUSTOM:WitheredRoyalWallpaper",
+      "~CUSTOM:OrnateDoubleLumaflyLantern",
+      "~CUSTOM:FossilstoneSeal",
+      "~CUSTOM:OrnateIronSeal",
       "~CUSTOM:OrnateWindow",
       "~CUSTOM:FossilstoneStalactite",
       "~CUSTOM:OldOrnateLumaflyLantern",
@@ -516,6 +934,9 @@
       "~CUSTOM:FossilstoneSlab"
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:OrnateBench",
+      "~CUSTOM:OrnateDoubleLumaflyLantern",
+      "~CUSTOM:FossilstoneSeal",
       "~CUSTOM:OldOrnateLumaflyLantern",
       "~CUSTOM:OrnateIronPostSpear",
       "~CUSTOM:OrnateLumaflyLantern",
@@ -542,28 +963,70 @@
       "~CUSTOM:FossilstoneStairs"
     ]
   },
-  "tab_element_order": {},
+  "tab_element_order": {
+    "BUILDING_BLOCKS": [
+      "FossilstoneStalactite",
+      "Fossilstone",
+      "FossilstoneWithShells",
+      "FossilstoneSlab",
+      "FossilstoneStairs",
+      "FossilstoneWall",
+      "FossilstoneBricks",
+      "FossilstonePillar",
+      "FossilstoneBricksSlab",
+      "FossilstoneBricksStairs",
+      "FossilstoneBricksWall",
+      "SmallFossilstonePillar",
+      "FossilstoneSeal",
+      "PolishedFossilstone",
+      "OrnateIronPost",
+      "OrnateIronPostSpear",
+      "OrnateIronSeal",
+      "OrnateLumaflyLantern",
+      "OrnateDoubleLumaflyLantern",
+      "OldOrnateLumaflyLantern",
+      "OrnateIronFence",
+      "OrnateWindow",
+      "WitheredRoyalWallpaper",
+      "OrnateBench"
+    ],
+    "DECORATIONS": [
+      "FossilstoneStalactite",
+      "Fossilstone",
+      "FossilstoneWithShells",
+      "FossilstoneSlab",
+      "FossilstoneStairs",
+      "FossilstoneWall"
+    ]
+  },
   "language_map": {
     "en_us": {
-      "block.hollow_knight_decor.ornate_iron_fence": "Ornate Iron Fence",
       "block.hollow_knight_decor.fossilstone_bricks_stairs": "Fossilstone Bricks Stairs",
-      "block.hollow_knight_decor.old_ornate_lumafly_lantern": "Old Ornate Lumafly Lantern",
-      "block.hollow_knight_decor.fossilstone_bricks": "Fossilstone Bricks",
       "block.hollow_knight_decor.fossilstone_with_shells": "Fossilstone With Shells",
       "block.hollow_knight_decor.fossilstone_stairs": "Fossilstone Stairs",
+      "block.hollow_knight_decor.ornate_window": "Ornate Window",
+      "block.hollow_knight_decor.fossilstone_seal": "Fossilstone Seal",
+      "block.hollow_knight_decor.fossilstone_slab": "Fossilstone Slab",
+      "entity.hollow_knight_decor.bench_monster": "Bench Monster",
+      "block.hollow_knight_decor.ornate_iron_seal": "Ornate Iron Seal",
+      "block.hollow_knight_decor.fossilstone_bricks_wall": "Fossilstone Bricks Wall",
+      "block.hollow_knight_decor.fossilstone_pillar": "Fossilstone Pillar",
+      "block.hollow_knight_decor.ornate_double_lumafly_lantern": "Ornate Double Lumafly Lantern",
+      "block.hollow_knight_decor.ornate_lumafly_lantern": "Ornate Lumafly Lantern",
+      "block.hollow_knight_decor.ornate_iron_fence": "Ornate Iron Fence",
+      "item.hollow_knight_decor.bench_monster_spawn_egg": "Bench Monster Spawn Egg",
+      "block.hollow_knight_decor.old_ornate_lumafly_lantern": "Old Ornate Lumafly Lantern",
+      "block.hollow_knight_decor.fossilstone_bricks": "Fossilstone Bricks",
       "block.hollow_knight_decor.small_fossilstone_pillar": "Small Fossilstone Pillar",
       "block.hollow_knight_decor.fossilstone_bricks_slab": "Fossilstone Bricks Slab",
       "block.hollow_knight_decor.ornate_iron_post_spear": "Ornate Iron Post Spear",
-      "block.hollow_knight_decor.ornate_window": "Ornate Window",
-      "block.hollow_knight_decor.fossilstone_slab": "Fossilstone Slab",
       "block.hollow_knight_decor.ornate_iron_post": "Ornate Iron Post",
       "block.hollow_knight_decor.fossilstone_stalactite": "Fossilstone Stalactite",
       "block.hollow_knight_decor.fossilstone": "Fossilstone",
-      "block.hollow_knight_decor.fossilstone_bricks_wall": "Fossilstone Bricks Wall",
-      "block.hollow_knight_decor.fossilstone_pillar": "Fossilstone Pillar",
+      "block.hollow_knight_decor.withered_royal_wallpaper": "Withered Royal Wallpaper",
       "block.hollow_knight_decor.polished_fossilstone": "Polished Fossilstone",
       "block.hollow_knight_decor.fossilstone_wall": "Fossilstone Wall",
-      "block.hollow_knight_decor.ornate_lumafly_lantern": "Ornate Lumafly Lantern"
+      "block.hollow_knight_decor.ornate_bench": "Ornate Bench"
     }
   },
   "foldersRoot": {
@@ -573,18 +1036,21 @@
   "workspaceSettings": {
     "modid": "hollow_knight_decor",
     "modName": "Hollow Knight Decor",
-    "version": "0.1.3",
+    "version": "1.1.0",
+    "description": "Adds bunch of building stuff from game Hollow Knight",
     "author": "Astro, MCreator",
     "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "serverSideOnly": false,
-    "modPicture": "hallownest_seal",
+    "modPicture": "avatar",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "Andromeda and PhantomEye - General help with differet things   Pylo - Without MCreator i couldn\u0027t create this mod  Team Cherry - For creating such a beatiful game as Hollow Knight",
     "modElementsPackage": "net.mcreator.hollowknightdecor"
   },
   "mcreatorVersion": 202400452410

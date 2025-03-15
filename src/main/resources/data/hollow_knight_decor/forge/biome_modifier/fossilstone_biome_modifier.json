@@ -1,0 +1,15 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "plains",
+    "snowy_plains",
+    "sunflower_plains",
+    "badlands",
+    "bamboo_jungle",
+    "basalt_deltas",
+    "deep_dark",
+    "forest"
+  ],
+  "features": "hollow_knight_decor:fossilstone",
+  "step": "underground_ores"
+}

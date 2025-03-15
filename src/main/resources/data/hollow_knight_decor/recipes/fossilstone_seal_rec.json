@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "hollow_knight_decor:fossilstone_wall"
+    },
+    "b": {
+      "item": "hollow_knight_decor:fossilstone_bricks"
+    },
+    "c": {
+      "item": "hollow_knight_decor:small_fossilstone_pillar"
+    }
+  },
+  "result": {
+    "item": "hollow_knight_decor:fossilstone_seal",
+    "count": 2
+  }
+}

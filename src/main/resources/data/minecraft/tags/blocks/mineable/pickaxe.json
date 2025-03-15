@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
+    "hollow_knight_decor:ornate_bench",
+    "hollow_knight_decor:withered_royal_wallpaper",
+    "hollow_knight_decor:ornate_double_lumafly_lantern",
+    "hollow_knight_decor:fossilstone_seal",
+    "hollow_knight_decor:ornate_iron_seal",
     "hollow_knight_decor:ornate_window",
     "hollow_knight_decor:fossilstone_stalactite",
     "hollow_knight_decor:old_ornate_lumafly_lantern",

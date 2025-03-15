@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "hollow_knight_decor:block/ornate_bench"
+    },
+    "facing=east": {
+      "model": "hollow_knight_decor:block/ornate_bench",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "hollow_knight_decor:block/ornate_bench",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "hollow_knight_decor:block/ornate_bench",
+      "y": 270
+    }
+  }
+}

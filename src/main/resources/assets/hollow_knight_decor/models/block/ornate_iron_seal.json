@@ -1,0 +1,9 @@
+{
+  "parent": "hollow_knight_decor:custom/bigornatehallownestseal",
+  "textures": {
+    "all": "hollow_knight_decor:block/bigornateseal",
+    "particle": "hollow_knight_decor:block/bigornateseal",
+    "0": "hollow_knight_decor:block/bigornateseal"
+  },
+  "render_type": "cutout"
+}

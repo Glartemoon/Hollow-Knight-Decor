@@ -21,7 +21,10 @@ public class HollowKnightDecorModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(HollowKnightDecorModBlocks.ORNATE_BENCH.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_STALACTITE.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_WITH_SHELLS.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_SLAB.get().asItem());
@@ -29,25 +32,29 @@ public class HollowKnightDecorModTabs {
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_WALL.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_BRICKS.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_PILLAR.get().asItem());
-			tabData.accept(HollowKnightDecorModBlocks.SMALL_FOSSILSTONE_PILLAR.get().asItem());
-			tabData.accept(HollowKnightDecorModBlocks.POLISHED_FOSSILSTONE.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_BRICKS_SLAB.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_BRICKS_STAIRS.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_BRICKS_WALL.get().asItem());
-			tabData.accept(HollowKnightDecorModBlocks.ORNATE_IRON_FENCE.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.SMALL_FOSSILSTONE_PILLAR.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_SEAL.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.POLISHED_FOSSILSTONE.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.ORNATE_IRON_POST.get().asItem());
-			tabData.accept(HollowKnightDecorModBlocks.ORNATE_LUMAFLY_LANTERN.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.ORNATE_IRON_POST_SPEAR.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.ORNATE_IRON_SEAL.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.ORNATE_LUMAFLY_LANTERN.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.ORNATE_DOUBLE_LUMAFLY_LANTERN.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.OLD_ORNATE_LUMAFLY_LANTERN.get().asItem());
-			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_STALACTITE.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.ORNATE_IRON_FENCE.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.ORNATE_WINDOW.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.WITHERED_ROYAL_WALLPAPER.get().asItem());
+			tabData.accept(HollowKnightDecorModBlocks.ORNATE_BENCH.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_STALACTITE.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_WITH_SHELLS.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_SLAB.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_STAIRS.get().asItem());
 			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_WALL.get().asItem());
-			tabData.accept(HollowKnightDecorModBlocks.FOSSILSTONE_STALACTITE.get().asItem());
 		}
 	}
 }

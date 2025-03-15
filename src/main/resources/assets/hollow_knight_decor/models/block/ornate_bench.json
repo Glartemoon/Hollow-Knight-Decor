@@ -1,0 +1,9 @@
+{
+  "parent": "hollow_knight_decor:custom/benchgeneric1",
+  "textures": {
+    "all": "hollow_knight_decor:block/benchpart1",
+    "particle": "hollow_knight_decor:block/benchpart1",
+    "0": "hollow_knight_decor:block/benchpart1"
+  },
+  "render_type": "cutout"
+}

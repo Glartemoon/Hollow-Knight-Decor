@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "buglanternpost"
+        "0": "fossilstone_stalagmite"
       },
       "name": "default"
     }

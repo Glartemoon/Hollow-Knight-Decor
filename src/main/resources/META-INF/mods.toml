@@ -4,12 +4,13 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="hollow_knight_decor"
-version="0.1.3"
+version="1.1.0"
 displayName="Hollow Knight Decor"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="Andromeda and PhantomEye - General help with differet things   Pylo - Without MCreator i couldn't create this mod  Team Cherry - For creating such a beatiful game as Hollow Knight"
 authors="Astro, MCreator"
+description="Adds bunch of building stuff from game Hollow Knight"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -22,6 +23,12 @@ authors="Astro, MCreator"
     side="BOTH"
 
 
+[[dependencies.hollow_knight_decor]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 # Start of user code block dependencies configuration

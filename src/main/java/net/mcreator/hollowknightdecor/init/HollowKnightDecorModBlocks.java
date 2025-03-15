@@ -10,19 +10,24 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.hollowknightdecor.block.WitheredRoyalWallpaperBlock;
 import net.mcreator.hollowknightdecor.block.SmallFossilstonePillarBlock;
 import net.mcreator.hollowknightdecor.block.PolishedFossilstoneBlock;
 import net.mcreator.hollowknightdecor.block.OrnateWindowBlock;
 import net.mcreator.hollowknightdecor.block.OrnateLumaflyLanternBlock;
+import net.mcreator.hollowknightdecor.block.OrnateIronSealBlock;
 import net.mcreator.hollowknightdecor.block.OrnateIronPostSpearBlock;
 import net.mcreator.hollowknightdecor.block.OrnateIronPostBlock;
 import net.mcreator.hollowknightdecor.block.OrnateIronFenceBlock;
+import net.mcreator.hollowknightdecor.block.OrnateDoubleLumaflyLanternBlock;
+import net.mcreator.hollowknightdecor.block.OrnateBenchBlock;
 import net.mcreator.hollowknightdecor.block.OldOrnateLumaflyLanternBlock;
 import net.mcreator.hollowknightdecor.block.FossilstoneWithShellsBlock;
 import net.mcreator.hollowknightdecor.block.FossilstoneWallBlock;
 import net.mcreator.hollowknightdecor.block.FossilstoneStalactiteBlock;
 import net.mcreator.hollowknightdecor.block.FossilstoneStairsBlock;
 import net.mcreator.hollowknightdecor.block.FossilstoneSlabBlock;
+import net.mcreator.hollowknightdecor.block.FossilstoneSealBlock;
 import net.mcreator.hollowknightdecor.block.FossilstonePillarBlock;
 import net.mcreator.hollowknightdecor.block.FossilstoneBricksWallBlock;
 import net.mcreator.hollowknightdecor.block.FossilstoneBricksStairsBlock;
@@ -52,6 +57,11 @@ public class HollowKnightDecorModBlocks {
 	public static final RegistryObject<Block> OLD_ORNATE_LUMAFLY_LANTERN = REGISTRY.register("old_ornate_lumafly_lantern", () -> new OldOrnateLumaflyLanternBlock());
 	public static final RegistryObject<Block> FOSSILSTONE_STALACTITE = REGISTRY.register("fossilstone_stalactite", () -> new FossilstoneStalactiteBlock());
 	public static final RegistryObject<Block> ORNATE_WINDOW = REGISTRY.register("ornate_window", () -> new OrnateWindowBlock());
+	public static final RegistryObject<Block> ORNATE_IRON_SEAL = REGISTRY.register("ornate_iron_seal", () -> new OrnateIronSealBlock());
+	public static final RegistryObject<Block> FOSSILSTONE_SEAL = REGISTRY.register("fossilstone_seal", () -> new FossilstoneSealBlock());
+	public static final RegistryObject<Block> ORNATE_DOUBLE_LUMAFLY_LANTERN = REGISTRY.register("ornate_double_lumafly_lantern", () -> new OrnateDoubleLumaflyLanternBlock());
+	public static final RegistryObject<Block> WITHERED_ROYAL_WALLPAPER = REGISTRY.register("withered_royal_wallpaper", () -> new WitheredRoyalWallpaperBlock());
+	public static final RegistryObject<Block> ORNATE_BENCH = REGISTRY.register("ornate_bench", () -> new OrnateBenchBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }
